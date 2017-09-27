@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="UTF-8">
+	<script src='https://www.google.com/recaptcha/api.js?hl=tr'></script>
+</head>
+<body>
+	  <h1>reCAPTCHA V2 Örnek</h1>
+    <form action="kontrol.php" method="post">
+      <input type="name" name="ad" placeholder="Adınız" size="40"><br><br>
+      <input type="email" name="email" placeholder="E-Postanız" size="40"><br><br>
+      <textarea name="mesaj" rows="8" cols="39" placeholder="Mesajınız"></textarea><br><br>
+      <div class="g-recaptcha" data-sitekey="SİTE KEY BURAYA"></div><br>
+      <input type="submit" name="gonder" value="Gönder">
+      
+    </form>
+</body>
+</html>
