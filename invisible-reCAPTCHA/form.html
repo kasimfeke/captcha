@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+    function onSubmit(token) {
+        document.getElementById("i-recaptcha").submit();
+    }
+</script>
+</head>
+<body>
+
+  <form action="kontrol.php" method="POST" id='i-recaptcha'>
+    <label for="adsoyad">Ad Soyad:</label><br>
+    <input type="name" name="adsoyad" id="adsoyad" size="40"><br>
+    <label for="konu">Konu:</label><br>
+    <input type="text" name="konu" id="konu" size="40"><br>
+    <label for="mesaj">Mesaj:</label><br>
+    <textarea name="mesaj" id="mesaj" cols="32" rows="5"></textarea><br><br>
+    <button class="g-recaptcha" data-sitekey="SİTE KEY BURAYA" data-callback="onSubmit">Gönder</button>
+  </form>
+  
+</body>
+</html>
